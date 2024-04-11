@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before *:after {
+  box-sizing: inherit;
+}
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+main {
+  margin: 20px auto;
+  width: 80vw;
+  border: 1px solid black;
+}
+header.primary {
+  width: 95.8159%;
+  margin-left: 2.0833%;
+  float: left;
+  background-color: lightblue;
+}
+
+#blog {
+  width: 46.8619%;
+  margin: 2.0833%;
+  float: left;
+  background-color: lightgoldenrodyellow;
+}
+aside {
+  width: 46.8619%;
+  margin-top: 2.0833%;
+  float: left;
+  background-color: lightcoral;
+}
+footer {
+  width: 95.8159%;
+  margin-left: 2.0833%;
+  float: left;
+}
+
+footer.primary {
+  text-align: center;
+  background-color: pink;
+}

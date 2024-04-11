@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Resume</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="description" content="mobile first resume" />
+<meta name="author" content="Katie Castro" />
+  <link rel="stylesheet" href="https://use.typekit.net/qwc8tey.css">
+</head>
+  
+
+</li><header class="container" id="top">
+  <!-- Main navigation -->
+  <nav class="primary">
+  <ul>  
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+   </ul>  
+  </nav>
+</header>
+<!-- Main -->
+<main itemscope itemtype="http://schema.org/Person" class="container">
+  <h1 class="page-title">Katie Castro</h1>
+  <section id="about">
+    <h2>Personal Details</h2>
+    <div class="bio">
+    <img itemprop="image" src="./assets/media/IMG_0969.jpg" alt="Your Name">
+    <p itemprop="description">My name is Katie Castro I am a student at the University of Arkansas at Little Rock.I am majoring in web design and development.I currently reside in Little Rock Arkansas.My goal is to work for a company that allows me to showcase my creative abilities.I value adaptability and inclusion for all.</p>
+    </div>  
+    <dl class="details">
+      <dt>Name</dt>
+      <dd itemprop="name">
+        <span itemprop="givenName">Katie</span> <span itemprop="familyName">Castro</span>
+      </dd>
+      <dt>Date of birth</dt>
+      <dd itemprop="birthDate"><time datetime="2000-10-12">04/16/2000</time></dd>
+      <dt>Nationality</dt>
+      <dd itemprop="nationality">United States</dd>
+      <dt>Location</dt>
+      <dd itemprop="homeLocation">Arkansas</dd>
+      <dt>Telephone</dt>
+      <dd>
+        <a itemprop="telephone" href="tel:555.555.5555">501.786.9926</a>
+      </dd>
+      <dt>Email</dt>
+      <dd>
+        <a itemprop="email" href="mailto:email@mail.com">krcastro@ualr.edu</a>
+      </dd>
+      <dt>Address</dt>
+
+      <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">3900 Ludwig St</span>
+        <span itemprop="addressLocality">Little Rock</span>
+        <span itemprop="postalCode">72204</span>
+        <span itemprop="addressCountry">USA</span>
+      </dd>
+
+    </dl>
+    <ul class="related-links">
+      <li><a itemprop="url" rel="me" href="https://github.com/profile"> github</a></li>
+      <li><a itemprop="url" rel="me" href="http://linkedin.com/profile">linkedin</a></li>
+      <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
+    </ul>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li class="skill">HTML</li>
+      <li class="skill">PHP</li>
+      <li class="skill">CSS</li>
+      <li class="skill">Graphic Design</li>
+    </ul>
+    
+  </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <!-- current job -->
+    <article class="job">
+      <h3 itemprop="jobTitle">Team Member</h3>
+      <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <span itemprop="name">Target</span>
+        <span>February 2023 - Present</span>
+        <p itemprop="description">My responsibilities include uptading the floor with incoming products while attending to any guest needs.</p>
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <a itemprop="url" href="https://corporate.target.com/careers">Company URL</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">12700 Chenal Pkwy, Little Rock, AR 72211</span>
+        </span>
+        </span>
+      </div>
+    </article>
+    <h2>Education</h2>
+    <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+      <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Web Design and Development</h3>
+      <span itemprop="name">University name 1</span>
+      <span itemprop="location" itemscope>2801 S University Ave, Little Rock, AR 72204</span>
+      <span>2022-2026</span>
+    </article>
+  </section>
+</main>
+<!-- Footer -->
+<footer>
+  <div id="copyright">
+    &copy; 2024 Katie Castro | <a href="#top">Top</a>
+  </div>
+</footer>
