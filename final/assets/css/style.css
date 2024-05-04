@@ -108,12 +108,9 @@ nav {
   z-index: 9;
 }
 
-
-
 .border-right {
   border-right: 2px solid #26261a63;
 }
-
 
 footer {
   height: 150px;
@@ -134,7 +131,6 @@ footer {
   }
   a:hover {
     color: ;
-    
   }
   .copyright {
     width: 100%;
@@ -155,7 +151,7 @@ footer {
 
   #header {
     height: 70vh;
-    background-image: url("../img/br-header-t.jpg");
+    background-image: url("../img/header600.webp");
   }
 
   /* ----- NavBar ----- */
@@ -204,64 +200,49 @@ footer {
     img {
       grid-column: 2;
       grid-row: 1 / span 2;
+      object-fit: cover;
     }
-    
+
     .responsive-image {
       min-width: 400px;
       min-height: 300px;
     }
   }
 
-
-@media screen and (min-width: 992px) {
-  main {
-    width: 100%;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-
-  #header {
-    height: 100vh;
-    background-image: url("../img/guateheader.webp");
-
-    h1 {
-      font-size: 3rem;
+  @media screen and (min-width: 992px) {
+    main {
+      width: 100%;
     }
-  }
-
-  #intro {
-    width: 80vw;
-    margin: auto;
-  }
-  #trailsintro {
-    width: 80vw;
-    margin: auto;
-  }
-
-  #zipintro {
-    width: 80vw;
-    margin: auto;
-  }
-  #zipintro2 {
-    padding-bottom: 100px;
-  }
-  #canoeintro {
-    width: 80vw;
-    margin: auto;
-  }
-
-  #icon-links {
-    flex-direction: row;
-    justify-content: space-around;
-
-    .icon {
-      width: fit-content;
-      border: none;
+    h2 {
+      font-size: 2rem;
     }
+    p {
+      font-size: 1.2rem;
+    }
+
+    #header {
+      height: 100vh;
+      background-image: url("../img/guateheader.webp");
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    #popular-destination {
+      width: 80vw;
+      margin: auto;
+    }
+    #antigua {
+      width: 80vw;
+      margin: auto;
+    }
+
+    #tikal {
+      width: 80vw;
+      margin: auto;
+    }
+   
     h4 {
       width: fit-content;
       margin: auto;
@@ -275,11 +256,6 @@ footer {
     gap: 20px;
     justify-content: center;
   }
-
-  
-
-  
-  
 
   .card {
     height: 570px;
@@ -299,8 +275,4 @@ footer {
       text-align: center;
     }
   }
-
- 
-
- 
 }
