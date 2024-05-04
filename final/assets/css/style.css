@@ -1,0 +1,306 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.responsive-image {
+  max-width: 100%;
+  min-width: 400px;
+  min-height: 300px;
+  max-height: 690px;
+  margin-bottom: 20px;
+}
+
+main {
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#header {
+  height: 50vh;
+  position: relative;
+  background-image: url("../img/guateheader.webp");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-container {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 800;
+}
+/* ------- NavBar ------- */
+nav {
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-around;
+    color: #000;
+  }
+
+  a:hover {
+  }
+
+  svg {
+    fill: #000;
+  }
+}
+
+.links-container {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 300px;
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+  padding: 20px;
+  display: block;
+  cursor: pointer;
+}
+#sidebar-active:checked ~ .links-container {
+  display: flex;
+}
+#sidebar-active:checked ~ #overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+
+
+.border-right {
+  border-right: 2px solid #26261a63;
+}
+
+
+footer {
+  height: 150px;
+  position: relative;
+
+  ul {
+    padding: 20px 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    color: ;
+  }
+  a:hover {
+    color: ;
+    
+  }
+  .copyright {
+    width: 100%;
+    color: var;
+    text-align: center;
+    margin-top: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 768px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  #header {
+    height: 70vh;
+    background-image: url("../img/br-header-t.jpg");
+  }
+
+  /* ----- NavBar ----- */
+  nav.primary .open-sidebar-button,
+  .close-sidebar-button {
+    display: none;
+  }
+  #sidebar-active {
+    display: none;
+  }
+
+  nav {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: none;
+    position: absolute;
+  }
+
+  nav a {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  #header h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    height: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+
+    img {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+    
+    .responsive-image {
+      min-width: 400px;
+      min-height: 300px;
+    }
+  }
+
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 100%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  #header {
+    height: 100vh;
+    background-image: url("../img/guateheader.webp");
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  #intro {
+    width: 80vw;
+    margin: auto;
+  }
+  #trailsintro {
+    width: 80vw;
+    margin: auto;
+  }
+
+  #zipintro {
+    width: 80vw;
+    margin: auto;
+  }
+  #zipintro2 {
+    padding-bottom: 100px;
+  }
+  #canoeintro {
+    width: 80vw;
+    margin: auto;
+  }
+
+  #icon-links {
+    flex-direction: row;
+    justify-content: space-around;
+
+    .icon {
+      width: fit-content;
+      border: none;
+    }
+    h4 {
+      width: fit-content;
+      margin: auto;
+    }
+  }
+
+  #cards {
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  
+
+  
+  
+
+  .card {
+    height: 570px;
+    grid-template-columns: 400px;
+    grid-template-rows: 300px 40px 300px;
+    grid-template-areas:
+      "image"
+      "heading"
+      "text";
+
+    img {
+      grid-area: image;
+    }
+
+    h3 {
+      grid-area: heading;
+      text-align: center;
+    }
+  }
+
+ 
+
+ 
+}
