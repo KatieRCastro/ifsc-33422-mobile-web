@@ -41,6 +41,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color:white;
 }
 
 .title-container {
@@ -64,10 +65,11 @@ nav {
     width: 100%;
     padding: 20px 30px;
     justify-content: space-around;
-    color: #000;
+    color: white;
   }
 
   a:hover {
+color: gold;
   }
 
   svg {
