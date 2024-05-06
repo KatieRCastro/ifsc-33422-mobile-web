@@ -119,6 +119,15 @@ nav {
 	left: 0;
 	z-index: 9;
 }
+#about {
+	background-color: var(--accent-main);
+	color: var(--primary-type-color);
+	padding: 20px 20px 20px 20px;
+}
+
+#about h2 {
+color: var(--primary-type-color);
+}
 
 .border-right {
 	border-right: 2px solid #26261a63;
