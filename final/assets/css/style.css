@@ -1,3 +1,9 @@
+:root {
+  --primary-type-color: white;
+  --accent-main: #A65D03;
+  --accent-hover: #D98E04;
+
+
 html {
 	box-sizing: border-box;
 }
@@ -41,7 +47,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	color: white;
+	color: var(--primary-type-color);
 }
 
 .title-container {
@@ -69,11 +75,11 @@ nav {
 	}
 
 	a:hover {
-		color: gold;
+		color: var(--accent-hover);
 	}
 
 	svg {
-		fill: #000;
+		fill: white;
 	}
 }
 
@@ -114,9 +120,15 @@ nav {
 	border-right: 2px solid #26261a63;
 }
 
+#cards a {
+	color: white;
+	text-decoration: none;
+}
+
 footer {
 	height: 150px;
 	position: relative;
+  background-color: var(--accent-main);
 
 	ul {
 		padding: 20px 10px;
@@ -129,14 +141,15 @@ footer {
 		list-style-type: none;
 	}
 	a {
-		color: ;
+		color: var(--primary-type-color);
+    text-decoration: none;
 	}
 	a:hover {
-		color: ;
+		color: var(--accent-hover);
 	}
 	.copyright {
 		width: 100%;
-		color: var;
+		color: var(--primary-type-color);
 		text-align: center;
 		margin-top: 35px;
 	}
@@ -235,6 +248,7 @@ footer {
 			width: 80vw;
 			margin: auto;
 			padding: 0;
+      margin-top: 80px;
 		}
 		#antigua {
 			width: 80vw;
@@ -267,7 +281,7 @@ footer {
 	}
 
 	#cards {
-		height: 750px;
+		height: 650px;
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
@@ -288,9 +302,10 @@ footer {
 		}
 
 		h3 {
-			grid-area: heading;
+			grid-area: image;
 			text-align: center;
 		}
+
 	}
 	#lake-atitlan {
 		display: flex;
