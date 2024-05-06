@@ -276,6 +276,17 @@ footer {
 			margin: auto;
 			margin-bottom: 80px;
 		}
+		#form {
+		width: 80vw;
+		margin: auto;
+		margina-top:80px;
+		margin-bottom: 80px;
+		}
+		#form h1 {
+		font-weight: 800;
+		font-size: 70px;
+		color: var(--accent-main);
+		}
 
 		h4 {
 			width: fit-content;
