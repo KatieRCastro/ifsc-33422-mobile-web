@@ -121,7 +121,7 @@ nav {
 }
 
 #cards a {
-	color: white;
+	color: var(--primary-type-color);
 	text-decoration: none;
 }
 
