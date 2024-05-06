@@ -17,14 +17,18 @@ text-align: center;
  font-size: 60px;
  color: var(--accent-main);
  }
+
 li {
     list-style: none;
 }
+
  a {
     text-decoration: none;
     color: var(--accent-main);
     font-size: 30px;
  }
- a:hover {
+
+a:hover {
 		color: var(--accent-hover);
 	}
+}
