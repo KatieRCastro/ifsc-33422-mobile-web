@@ -1,0 +1,30 @@
+:root {
+  --primary-bg-color: #F2C2DC;
+   --primary-type-color: white;
+  --accent-main: #F2055C;
+  --accent-hover: #F24495;
+
+
+ body {
+font-family: "garamond-premier-pro", serif;
+font-weight: 400;
+font-style: italic;
+background-color: var(--primary-bg-color);
+text-align: center;
+ }
+
+ h1 {
+ font-size: 60px;
+ color: var(--accent-main);
+ }
+li {
+    list-style: none;
+}
+ a {
+    text-decoration: none;
+    color: var(--accent-main);
+    font-size: 30px;
+ }
+ a:hover {
+		color: var(--accent-hover);
+	}
