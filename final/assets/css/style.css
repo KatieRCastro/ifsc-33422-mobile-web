@@ -38,6 +38,9 @@ main {
 	margin: 0 auto;
 	position: relative;
 }
+h2 {
+	color: var(--accent-main);
+}
 
 #header {
 	height: 50vh;
@@ -162,6 +165,7 @@ footer {
 
 	h2 {
 		font-size: 1.6rem;
+		color: var(--accent-main);
 	}
 
 	#header {
@@ -284,6 +288,7 @@ footer {
 		margin-top:80px;
 		margin-bottom: 80px;
 		}
+
 		#form h1 {
 		font-weight: 800;
 		font-size: 70px;
@@ -341,6 +346,7 @@ footer {
 		h3 {
 			grid-area: image;
 			text-align: center;
+			color: var(--accent-main);
 		}
 
 	}
