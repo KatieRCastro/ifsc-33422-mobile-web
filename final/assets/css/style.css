@@ -233,6 +233,7 @@ footer {
 		}
 		h2 {
 			font-size: 2rem;
+			color: var(--accent-main);
 		}
 		p {
 			font-size: 1.2rem;
@@ -289,7 +290,7 @@ footer {
 		color: var(--accent-main);
 		}
 
-		h4 {
+		#form h4 {
 			width: fit-content;
 			margin: auto;
 		}
@@ -300,17 +301,17 @@ footer {
 		margin-top:80px;
 		margin-bottom: 80px;
 		}
-		h1 {
+		#aboutpage h1 {
 		font-weight: 800;
 		font-size: 70px;
 		color: var(--accent-main);
 		}
 
-		h2 {
+		#aboutpage h2 {
 		color: var(--accent-main);
 		}
 
-		h4 {
+		#aboutpage h4 {
 			width: fit-content;
 			margin: auto;
 		}
